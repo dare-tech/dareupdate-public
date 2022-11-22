@@ -3,6 +3,12 @@ Public release of DARE Update - NOTE: Product requires a license from DARE Techn
 
 Please note that this version is still in Beta. A full wiki will be added in the coming weeks prior to the official release.
 
+## DARE Update Agent Options
+
+The DARE Update Agent is located at **/Library/Application Support/DARE/Bin/dareupdate** with a symlink at **/usr/local/bin/dareupdate**
+
+For all flags available with the DARE Update Agent, type **dareupdate help** into terminal. 
+
 ## Configuration Profile Customisation
 
 Until the official wikis are available, please refer to the descriptions within the JSON schema for each individual key for an overview of functionality.
@@ -29,3 +35,13 @@ Example custom message:
 Result:
 
 <img width="549" alt="image" src="https://user-images.githubusercontent.com/67438911/203436080-b3753764-a67b-48d3-83f8-f58d9ef66c2e.png">
+
+
+## Logs
+
+The two main DARE Update log files are as follows:
+
+**/Library/Application Support/DARE/Logs/UpdateFramework.log**
+**/var/log/DAREUpdate.log**
+
+The update framework log shows all activity from the munki framework. The DARE Update log includes all activity outputted by the DARE Update agent.
