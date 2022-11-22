@@ -42,6 +42,7 @@ Result:
 The two main DARE Update log files are as follows:
 
 **/Library/Application Support/DARE/Logs/UpdateFramework.log**
+
 **/var/log/DAREUpdate.log**
 
 The update framework log shows all activity from the munki framework. The DARE Update log includes all activity outputted by the DARE Update agent.
