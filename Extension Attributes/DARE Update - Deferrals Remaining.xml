@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><extensionAttribute>
+<displayName>DARE Update - Deferrals Remaining</displayName>
+<description>Use to report on how many remaining deferrals the user has (if deferrals are configured)</description>
+<dataType>string</dataType>
+<scriptContentsMac>#!/bin/bash&#13;
+&#13;
+#######################################################################################################################################################################&#13;
+#######################################################################################################################################################################&#13;
+#&#13;
+# Script provided by DARE Technology Ltd to be used "as is".&#13;
+# Copyright (c) 2022&#13;
+# Support - www.dare.tech&#13;
+#&#13;
+# Note: Modifications to this script (other than modifying parameters and modifications made by DARE) do not fall into&#13;
+#    	the scope of support requests relating to this workflow.&#13;
+#&#13;
+#######################################################################################################################################################################&#13;
+#######################################################################################################################################################################&#13;
+#&#13;
+# ABOUT THIS SCRIPT:&#13;
+# This script is to be used as a Jamf Pro extension attribute. Use to report on how many remaining deferrals the user has (if deferrals are configured).&#13;
+#&#13;
+#######################################################################################################################################################################&#13;
+#######################################################################################################################################################################&#13;
+&#13;
+deferCount=$(/usr/bin/defaults read /Library/Application\ Support/DARE/Run/runData.plist DeferCount)&#13;
+&#13;
+if [[ "$deferCount" == "N/A" ]]; then&#13;
+	/bin/echo "&lt;result&gt;Deferrals are not configured&lt;/result&gt;"&#13;
+else&#13;
+	/bin/echo "&lt;result&gt;$deferCount&lt;/result&gt;"&#13;
+fi&#13;
+&#13;
+exit 0&#13;
+</scriptContentsMac>
+</extensionAttribute>
