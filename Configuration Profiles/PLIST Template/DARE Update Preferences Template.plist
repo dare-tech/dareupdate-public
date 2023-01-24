@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ScheduledUpdates</key>
+    <dict>
+      <key>runLimitations</key>
+      <dict>
+        <key>runType</key>
+        <string>specifyPatchDay</string>
+        <key>patchDay</key>
+        <integer>2</integer>
+        <key>missedUpdatePrompt</key>
+        <true/>
+        <key>singlePatchDayPrompt</key>
+        <false/>
+      </dict>
+      <key>deferralConfiguration</key>
+      <dict>
+        <key>deferralOption</key>
+        <string>specifyDeferralLimit</string>
+        <key>specifyLimit</key>
+        <integer>10</integer>
+      </dict>
+      <key>appListType</key>
+      <string>vertical</string>
+      <key>refreshInterval</key>
+      <integer>30</integer>
+      <key>acceptableAppBundleIDs</key>
+      <array>
+        <string>us.zoom.xos</string>
+        <string>com.apple.iWork.Keynote</string>
+      </array>
+      <key>acceptableCameraUsage</key>
+      <true/>
+      <key>acceptableScreenSharing</key>
+      <true/>
+      <key>performLogoutUpdates</key>
+      <true/>
+      <key>updateProgressOverlayIcon</key>
+      <string>selfService</string>
+      <key>gracePeriodMinutes</key>
+      <integer>20</integer>
+      <key>customIcon</key>
+      <string>/usr/local/images/CustomIcon.png</string>
+      <key>initialPromptOverlayIcon</key>
+      <string>/usr/local/images/CustomIcon.png</string>
+      <key>customInitialPromptSize</key>
+      <dict>
+        <key>promptHeight</key>
+        <integer>330</integer>
+        <key>promptWidth</key>
+        <integer>640</integer>
+      </dict>
+      <key>customGracePromptSize</key>
+      <dict>
+        <key>promptHeight</key>
+        <integer>330</integer>
+        <key>promptWidth</key>
+        <integer>640</integer>
+      </dict>
+      <key>singleAppTitle</key>
+      <string>Important Update Available</string>
+      <key>multipleAppsTitle</key>
+      <string>Important Updates Available</string>
+      <key>singleInitialQuitPromptMessage</key>
+      <string>appName must quit to install a pending update. Please save your work and click update</string>
+      <key>multipleInitialQuitPromptMessage</key>
+      <string>The Apps listed below must quit to install a pending update. Please save your work and click update</string>
+      <key>singleAppGracePeriodQuitMessage</key>
+      <string>appName must quit to install a pending update. You have no remaining deferrals. Please save your work and click update</string>
+      <key>multipleAppGracePeriodQuitMessage</key>
+      <string>The Apps listed below must quit to install a pending update. You have no deferrals remaining. Please save your work and click update</string>
+      <key>singleInitialLogOutPromptMessage</key>
+      <string>appName requires a Log Out to install a pending update. Please save your work and click update</string>
+      <key>multipleInitialLogOutPromptMessage</key>
+      <string>The Apps listed below require a Log Out to install a pending update. Please save your work and click update</string>
+      <key>singleAppGracePeriodLogOutMessage</key>
+      <string>appName requires a Log Out to install a pending update. You have no deferrals remaining. Please save your work and click update</string>
+      <key>multipleAppGracePeriodLogOutMessage</key>
+      <string>The Apps listed below require a Log Out to install pending updates. You have no deferrals remaining. Please save your work and click update</string>
+      <key>customDeferButton</key>
+      <string>Snooze</string>
+      <key>customUpdateButton</key>
+      <string>Update Now</string>
+      <key>customLogOutButton</key>
+      <string>Log Out Now</string>
+      <key>updateProgressPosition</key>
+      <string>topright</string>
+      <key>updateProgressFocus</key>
+      <false/>
+      <key>displayCompletePrompt</key>
+      <true/>
+    </dict>
+    <key>ForcedUpdates</key>
+    <dict>
+      <key>initialPromptOverlayIcon</key>
+      <string>selfService</string>
+      <key>refreshInterval</key>
+      <integer>30</integer>
+      <key>acceptableAppBundleIDs</key>
+      <array>
+        <string>us.zoom.xos</string>
+        <string>com.apple.iWork.Keynote</string>
+      </array>
+      <key>acceptableCameraUsage</key>
+      <true/>
+      <key>acceptableScreenSharing</key>
+      <true/>
+      <key>performLogoutUpdates</key>
+      <true/>
+      <key>updateProgressOverlayIcon</key>
+      <string>selfService</string>
+      <key>customIcon</key>
+      <string>/usr/local/images/CustomIcon.png</string>
+      <key>customInitialPromptSize</key>
+      <dict>
+        <key>promptHeight</key>
+        <integer>330</integer>
+        <key>promptWidth</key>
+        <integer>640</integer>
+      </dict>
+      <key>customGracePromptSize</key>
+      <dict>
+        <key>promptHeight</key>
+        <integer>330</integer>
+        <key>promptWidth</key>
+        <integer>640</integer>
+      </dict>
+      <key>customTitle</key>
+      <string>appName Update Required</string>
+      <key>initialQuitPromptMessage</key>
+      <string>appName must quit to install a pending update. Please save your work and click update</string>
+      <key>initialLogOutPromptMessage</key>
+      <string>appName requires a Log Out to install a pending update. Please save your work and click update</string>
+      <key>gracePeriodQuitPromptMessage</key>
+      <string>appName must quit to install a pending update. You have no deferrals remaining. Please save your work and click update</string>
+      <key>gracePeriodLogOutPromptMessage</key>
+      <string>appName requires a Log Out to install a pending update. You have no deferrals remaining. Please save your work and click update</string>
+      <key>customDeferButton</key>
+      <string>Snooze</string>
+      <key>customUpdateButton</key>
+      <string>Update Now</string>
+      <key>customLogOutButton</key>
+      <string>Log Out Now</string>
+      <key>updateProgressPosition</key>
+      <string>topright</string>
+      <key>updateProgressFocus</key>
+      <false/>
+      <key>displayCompletePrompt</key>
+      <true/>
+    </dict>
+  </dict>
+</plist>
