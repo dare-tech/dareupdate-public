@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extensionAttribute>
+<displayName>DARE Update - Last Run Result</displayName>
+<description>When DARE Update interacts with the user during cached update prompts, the result of all interactions are written to a log file (/Library/Application Support/DARE/Logs/JamfPro_EA.log). &#13;
+Actions such as the user deferring or running an update will be logged, as well as whether the update was successful.&#13;
+Only the last interaction will be visibile in the Jamf Pro extension attribute.</description>
+<dataType>string</dataType>
+<scriptContentsMac>#!/bin/bash&#13;
+&#13;
+#######################################################################################################################################################################&#13;
+#######################################################################################################################################################################&#13;
+#&#13;
+# Script provided by DARE Technology Ltd to be used "as is".&#13;
+# Copyright (c) 2022&#13;
+# Support - www.dare.tech&#13;
+#&#13;
+# Note: Modifications to this script (other than modifying parameters and modifications made by DARE) do not fall into&#13;
+#    	the scope of support requests relating to this workflow.&#13;
+#&#13;
+#######################################################################################################################################################################&#13;
+#######################################################################################################################################################################&#13;
+#&#13;
+# ABOUT THIS SCRIPT:&#13;
+# This script is to be used as a Jamf Pro extension attribute. When DARE Update interacts with the user during cached update prompts, the result of all interactions&#13;
+# are written to a log file (/Library/Application Support/DARE/Logs/JamfPro_EA.log). &#13;
+# Actions such as the user deferring or running an update will be logged, as well as whether the update was successful.&#13;
+# Only the last interaction will be visibile in the Jamf Pro extension attribute.&#13;
+#&#13;
+#######################################################################################################################################################################&#13;
+#######################################################################################################################################################################&#13;
+&#13;
+if [[ -e "/Library/Application Support/DARE/Logs/JamfPro_EA.log" ]]; then&#13;
+	eaLog=$(/usr/bin/sed -n '$p' "/Library/Application Support/DARE/Logs/JamfPro_EA.log")&#13;
+	/bin/echo "&lt;result&gt;$eaLog&lt;/result&gt;"&#13;
+elif [[ -e "/usr/local/dare/JamfPro_EA_Backup.log" ]]; then&#13;
+	eaLog=$(/usr/bin/sed -n '$p' "/usr/local/dare/JamfPro_EA_Backup.log")&#13;
+	/bin/echo "&lt;result&gt;$eaLog&lt;/result&gt;"&#13;
+fi&#13;
+&#13;
+exit 0</scriptContentsMac>
+</extensionAttribute>
