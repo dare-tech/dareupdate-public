@@ -114,7 +114,6 @@ function installLatest() {
 				/bin/rm "$downloadPath"
 			fi
 			/bin/echo "The DARE Update install was successful."
-			exit 0
 		fi
 	else
 		if [[ -e "$downloadPath" ]]; then
