@@ -9,4 +9,4 @@ DARE Update is MDM agnostic, however as a minimum you need to be able to deploy 
 
 Please use the [included wikis](https://github.com/dare-tech/dareupdate-public/wiki)  for a technology overview, as well as full administrator's guides relating to deploying and managing DARE Update.
 
-Please refer to our [App Catalog](https://www.dareupdate.co) for a list of live applications.
+Please refer to our [App Catalog](https://dare.tech/zappl/#appcatalog) for a list of live applications.
